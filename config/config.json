@@ -85,34 +85,6 @@
           "quic"
         ]
       }
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 3,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "af7d5cf8-442d-4bb3-8a76-eb367178781d",
-#vless
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": {
-          "path": "/xhttp"
-        }
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ]
-      }
     }
   ],
   "outbounds": [
