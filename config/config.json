@@ -96,6 +96,18 @@
       "protocol": "blackhole",
       "settings": {},
       "tag": "blocked"
+    },
+    {
+      "tag": "warp_socks",
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "127.0.0.1",
+            "port": 40000
+          }
+        ]
+      }
     }
   ],
   "routing": {
@@ -133,6 +145,11 @@
         "protocol": [
           "bittorrent"
         ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "warp_socks",
+        "network": "tcp,udp"
       }
     ]
   }
